@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.css"; // Import your CSS file
 
 // Import image files
@@ -14,6 +14,9 @@ import jeremySmallFull2 from "./assets/image-jeremy-small-full-2.png";
 
 // Your React component
 function App() {
+  useEffect(() => {
+    document.title = "suite | landing page";
+  }, []);
   return (
     <div className="container-margin">
       <header className="container">
